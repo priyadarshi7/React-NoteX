@@ -4,7 +4,6 @@ import NoteArea from "./Components/NoteArea";
 import NoteDisplay from "./Components/NoteDisplay";
 import Note from "./Components/Note";
 import Loading from "./Components/Loading";
-import { onSnapshot } from "firebase/firestore"
 import { nanoid } from "nanoid";
 
 export default function App() {
