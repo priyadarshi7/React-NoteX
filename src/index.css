@@ -1,0 +1,235 @@
+*{
+    padding:0;
+    border:0;
+    margin:0;
+}
+html {
+    --s: 200px; /* control the size*/
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+    
+    background:
+      repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+       calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+      repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
+  }
+
+
+html{
+    height:100svh;
+}
+
+.main{
+    position: relative;
+    top:0;
+}
+
+.note-search{
+    display: flex;
+    width:100%;
+    height:60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+.search{
+    height:100%;
+    width:100%;
+    display: flex;
+    gap:1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search input{
+    width:40%;
+    height:40px;
+    border:0;
+    outline:0;
+    border-radius: 25px;
+    padding-left:2vh;
+    font-size: medium;
+}
+.search button{
+    height:40px;
+    width:10%;
+    background: linear-gradient(180.8deg, rgb(139, 10, 130) 6.9%, rgb(73, 6, 70) 73.2%);
+    color:white;
+    font-size: xx-large;
+    border-radius: 25px;
+}
+.search button:hover{
+    transform: scale(1.05);
+    color:black;
+}
+
+/*NoteArea*/
+.note-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*NotesDisplay*/
+
+.note-display{
+background: rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(0, 0, 0, 0.3);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.note-display-head{
+    font-size: large;
+    color:white;
+    font-weight: 900;
+}
+.note-display-head h3{
+    margin:10px 30px 10px 30px;
+}
+.date{
+    color:white;
+    font-weight: 600;
+}
+.time{
+    color:white;
+    font-weight: 600;
+    margin-bottom: 2vh;
+}
+.note-display button{
+    margin-bottom: 2vh;
+    background: rgba(255, 255, 255, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+    color: white;
+    font-size: medium;
+    border-radius: 8px;
+    padding:0.5vh;
+    margin:1vh;
+    border: 1px solid white;
+}
+
+.note-display:hover{
+background: rgba(4, 0, 107, 0.31);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(13.3px);
+-webkit-backdrop-filter: blur(13.3px);
+border: 1px solid rgba(4, 0, 107, 0.46);
+border:1px solid white;
+}
+
+.note-display button:hover{
+background: rgba(239, 71, 71, 0.8);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(216, 0, 0, 0.3);
+}
+
+.note-display button:hover{
+    transform: scale(1.1);
+}
+ /*note area*/
+ .note-area{
+    gap:3vh;
+ }
+ /*Main-Note*/
+/* .Main-Note{
+    top:0;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur('5px');
+}
+
+.Note{
+    height:60%;
+    width:60%;
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+textarea{
+    min-height: 70%;
+    max-height: 70%;
+    font-size: x-large;
+} */
+
+.Note button{
+    margin-bottom: 2vh;
+    background: rgba(255, 255, 255, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+    color: white;
+    font-size: medium;
+    border-radius: 8px;
+    padding:0.5vh;
+    margin:1vh;
+    border: 1px solid white;
+    height:4vh;
+    width:10vh;
+}
+.Note button:hover{
+    background: rgba(239, 71, 71, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(216, 0, 0, 0.3);
+    }
+
+    .load-screen{
+        height:100svh;
+        width:100%;
+        background-color: black;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .load{
+        animation: myAnim 4s ease 0s 1 normal forwards;
+    }
+    @keyframes myAnim {
+        0%{
+          opacity:0;
+        }
+        20%,
+          50%,
+          100% {
+          opacity: 1;
+          transform: scale(1);
+          }
+      
+          25%,
+          75% {
+              opacity: 1;
+          transform: scale(1.2);
+          }
+      }
+      
